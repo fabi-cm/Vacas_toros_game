@@ -1,5 +1,6 @@
 import validar_codigo from "./validarCodigo.js"
 import ocultar_codigo from "./ocultarCodigo.js"
+import ternera_codigo from "./examen.js"
 
 describe("Juego Toros y Vacas", () => {
     it("Introducir un codigo de jugador1 y ocultarlo", () => {
@@ -15,10 +16,10 @@ describe("Juego Toros y Vacas", () => {
     });
 
     it("Ternera #", () => {
-        expect(validar_codigo("2134","2403")).toEqual("!**#"); 
+        expect(ternera_codigo("2134","2403")).toEqual("!**#"); 
     });
 
     it("Primo %", () => {
-        expect(validar_codigo("2134","2403")).toEqual("%%*#"); 
+        expect(validar_codigo("2134","2403")).toEqual("%%*#");
     });
 });
