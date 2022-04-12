@@ -13,4 +13,12 @@ describe("Juego Toros y Vacas", () => {
     it("Validar respuesta de jugador 2 con letras", () => {
         expect(validar_codigo("2435au","ea34ou")).toEqual("!!**");      
     });
+
+    it("Ternera #", () => {
+        expect(validar_codigo("2134","2403")).toEqual("!**#"); 
+    });
+
+    it("Primo %", () => {
+        expect(validar_codigo("2134","2403")).toEqual("%%*#"); 
+    });
 });
